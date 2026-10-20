@@ -75,10 +75,13 @@ if (!isset($content)) {
             <div class="space-y-4">
                 <div class="flex items-start space-x-3">
                     <div class="w-6 h-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center font-mono text-xs text-gold shrink-0 mt-0.5">1</div>
-                    <div><h4 class="font-medium text-white text-sm">Download the App</h4></div>
+                    <div>
+                        <h4 class="font-medium text-white text-sm">Welcome to the Circle</h4>
+                        <p class="text-xs text-gray-400 mt-1">Check your phone or email for your onboarding confirmation and membership details.</p>
+                    </div>
                 </div>
             </div>
-            <a href="#download" class="inline-block px-6 py-3 rounded-full bg-gold text-emerald-950 font-bold hover:bg-white transition-all text-xs tracking-wider uppercase font-mono cursor-pointer">Download Now</a>
+            <a href="#home" class="inline-block px-6 py-3 rounded-full bg-gold text-emerald-950 font-bold hover:bg-white transition-all text-xs tracking-wider uppercase font-mono cursor-pointer">Return to Home</a>
         </div>
     </div>
 
