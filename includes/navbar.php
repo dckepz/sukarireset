@@ -19,10 +19,7 @@
                 The Story
                 <div class="nav-indicator absolute bottom-0 left-0 right-0 h-0.5 bg-[#cfa85c] scale-x-0 transition-transform duration-300 origin-center"></div>
             </a>
-            <a href="#download" class="nav-link relative py-2 font-sans text-sm tracking-wide transition-colors duration-300 hover:text-[#cfa85c] cursor-pointer focus:outline-none text-gray-300" data-page="download">
-                The Companion App
-                <div class="nav-indicator absolute bottom-0 left-0 right-0 h-0.5 bg-[#cfa85c] scale-x-0 transition-transform duration-300 origin-center"></div>
-            </a>
+
             <a href="#membership" class="nav-link relative py-2 font-sans text-sm tracking-wide transition-colors duration-300 hover:text-[#cfa85c] cursor-pointer focus:outline-none text-gray-300" data-page="membership">
                 Membership Circle
                 <div class="nav-indicator absolute bottom-0 left-0 right-0 h-0.5 bg-[#cfa85c] scale-x-0 transition-transform duration-300 origin-center"></div>
@@ -48,7 +45,7 @@
     <!-- Mobile Navigation Drawer -->
     <div id="mobile-nav-drawer" class="hidden md:hidden absolute top-20 left-0 right-0 bg-[#0A1710] border-b border-[#cfa85c]/10 px-6 py-6 space-y-4 flex flex-col shadow-2xl">
         <a href="#home" class="mobile-nav-link text-left py-2.5 font-sans text-base font-medium tracking-wide border-b border-gray-800/50 text-gray-300" data-page="home">The Story</a>
-        <a href="#download" class="mobile-nav-link text-left py-2.5 font-sans text-base font-medium tracking-wide border-b border-gray-800/50 text-gray-300" data-page="download">The Companion App</a>
+
         <a href="#membership" class="mobile-nav-link text-left py-2.5 font-sans text-base font-medium tracking-wide border-b border-gray-800/50 text-gray-300" data-page="membership">Membership Circle</a>
         <a href="#membership" class="w-full flex items-center justify-center space-x-2 py-3 rounded-full bg-[#cfa85c] text-[#0A1710] font-medium text-center tracking-wide">
             <span>Join the Reset</span>

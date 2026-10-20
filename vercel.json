@@ -4,15 +4,6 @@
   },
   "routes": [
     {
-      "src": "/assets/Sukari_Reset_Companion\\.apk",
-      "headers": {
-        "Content-Type": "application/vnd.android.package-archive",
-        "Content-Disposition": "attachment; filename=\"Sukari_Reset_Companion.apk\"",
-        "Cache-Control": "no-cache"
-      },
-      "dest": "/assets/Sukari_Reset_Companion.apk"
-    },
-    {
       "src": "/(assets|js|data)/(.*)",
       "dest": "/$1/$2"
     },

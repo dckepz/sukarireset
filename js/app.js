@@ -76,7 +76,6 @@ async function handleRouting() {
             if (page === 'home') initHome();
             else if (page === 'membership') initMembership();
             else if (page === 'payment') initPayment(params.get('tier'));
-            else if (page === 'download') initDownload();
             
             // Transition In
             gsap.to(container, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' });
@@ -105,9 +104,7 @@ function updateNavState(page) {
     });
 }
 
-// Page Specific Initializers
-function initMembership() { console.log('Membership view initialized'); }
-function initDownload() { console.log('Download view initialized'); }
+
 
 // Home Logic
 let currentStoryTab = 'hook';
@@ -142,14 +139,7 @@ window.switchStoryTab = function(key) {
             <div class="space-y-4 text-gray-300 font-sans leading-relaxed text-sm sm:text-base">
                 ${section.paragraphs.map(p => `<p>${p}</p>`).join('')}
             </div>
-            ${key === 'philosophy' ? `
-                <div class="pt-4">
-                    <a href="#download" class="inline-flex items-center space-x-2 text-gold hover:text-white font-medium text-sm border-b border-gold hover:border-white pb-0.5 transition-colors duration-300">
-                        <span>See what daily life inside looks like</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
-                </div>
-            ` : ''}
+
         </div>
         <div class="md:col-span-5 relative h-64 sm:h-80 md:h-[400px] w-full rounded-2xl overflow-hidden border border-gray-800/60 bg-emerald-950/20">
             <img src="assets/images/sukari_hero_1783232829580.jpg" class="w-full h-full object-cover grayscale opacity-20">
@@ -249,36 +239,6 @@ window.toggleFAQ = function(idx) {
     }
 };
 
-// Download Page Logic
-window.handleDownload = function(e) {
-    const status = document.getElementById('download-status');
-    if (!status) return;
-    
-    // Show download progress indicator
-    status.classList.remove('hidden');
-    gsap.from(status, { y: 10, opacity: 0, duration: 0.3 });
-    
-    // Hide after 10 seconds
-    setTimeout(() => {
-        gsap.to(status, { opacity: 0, duration: 1, onComplete: () => status.classList.add('hidden') });
-    }, 10000);
-    
-    // The actual download is handled by the <a href> to GitHub Releases
-    // No need to programmatically trigger anything — just let the link work
-};
-
-
-window.toggleGuide = function() {
-    const guide = document.getElementById('apk-install-guide');
-    if (!guide) return;
-    const isHidden = guide.classList.contains('hidden');
-    if (isHidden) {
-        guide.classList.remove('hidden');
-        gsap.from(guide, { height: 0, opacity: 0, duration: 0.4 });
-    } else {
-        gsap.to(guide, { height: 0, opacity: 0, duration: 0.4, onComplete: () => guide.classList.add('hidden') });
-    }
-};
 
 // Payment Logic
 let selectedTier = null;

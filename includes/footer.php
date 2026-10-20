@@ -34,7 +34,6 @@
             <h4 class="font-display text-white text-sm font-semibold uppercase tracking-wider">Quick Navigation</h4>
             <ul class="space-y-2.5 text-sm">
                 <li><a href="#home" class="hover:text-[#cfa85c] transition-colors">The Story & Journey</a></li>
-                <li><a href="#download" class="hover:text-[#cfa85c] transition-colors">The Mobile App</a></li>
                 <li><a href="#membership" class="hover:text-[#cfa85c] transition-colors">Membership Circles</a></li>
                 <li><a href="#membership" class="hover:text-[#cfa85c] transition-colors">Pricing Tiers</a></li>
             </ul>
