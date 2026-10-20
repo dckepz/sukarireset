@@ -38,6 +38,10 @@ if (!isset($content)) {
                 <a href="#emotional-journey" onclick="document.getElementById('emotional-journey').scrollIntoView({behavior:'smooth'}); return false;" class="w-full sm:w-auto px-8 py-4 rounded-full bg-emerald-900/40 border border-emerald-500/20 hover:bg-emerald-950 hover:border-emerald-500/40 text-white font-medium text-sm tracking-wide transition-all duration-300 text-center cursor-pointer">
                     Read the Full Story
                 </a>
+                <button onclick="toggleChat()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-emerald-950/70 border border-gold/40 hover:bg-gold hover:text-emerald-950 text-gold font-semibold text-sm tracking-wide transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer shadow-lg shadow-gold/5 group">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-gold group-hover:text-emerald-950 transition-colors"></i>
+                    <span>Live Chat</span>
+                </button>
                 <a href="#membership" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold text-emerald-950 hover:bg-white hover:text-emerald-950 font-semibold text-sm tracking-wide transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer">
                     <span>Join our Circle</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
@@ -180,9 +184,10 @@ if (!isset($content)) {
                 <a href="#membership" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold text-dark hover:bg-white hover:text-emerald-950 transition-all duration-300 font-semibold text-sm tracking-wide cursor-pointer text-center">
                     Explore Membership Tiers
                 </a>
-                <a href="#download" class="w-full sm:w-auto px-8 py-4 rounded-full bg-emerald-900/30 border border-gold/20 hover:border-gold/50 text-white transition-all duration-300 font-semibold text-sm tracking-wide cursor-pointer text-center">
-                    See the Companion App
-                </a>
+                <button onclick="toggleChat()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-emerald-900/30 border border-gold/30 hover:border-gold hover:bg-gold hover:text-emerald-950 text-white transition-all duration-300 font-semibold text-sm tracking-wide cursor-pointer text-center flex items-center justify-center space-x-2 group">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-gold group-hover:text-emerald-950 transition-colors"></i>
+                    <span>Chat with Us Live</span>
+                </button>
             </div>
             
             <p class="text-xs text-gray-500 font-mono">
